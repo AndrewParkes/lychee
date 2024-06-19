@@ -43,6 +43,7 @@ services:
       - DB_PORT=3306
       - DB_DATABASE=lychee
       - DB_USERNAME=lychee
+      - APP_URL=https://lychee.local.parkes.zip
       - DB_PASSWORD=${LYCHEE_PASSWORD}
       - STARTUP_DELAY=30
     restart: unless-stopped
