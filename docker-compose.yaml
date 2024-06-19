@@ -44,8 +44,10 @@ services:
       - DB_DATABASE=lychee
       - DB_USERNAME=lychee
       - APP_URL=https://lychee.local.parkes.zip
+      - TRUSTED_PROXIES=${TRUSTED_PROXIES}
       - DB_PASSWORD=${LYCHEE_PASSWORD}
       - STARTUP_DELAY=30
+      - APP_FORCE_HTTPS=true
     restart: unless-stopped
     depends_on:
       - lychee_db
